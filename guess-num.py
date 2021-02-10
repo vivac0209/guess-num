@@ -2,10 +2,14 @@
 # 讓使用者重複輸入數字去猜
 # 猜對的話 印出"終於猜對了"
 # 猜錯的話 要說 比答案大還小
+# 後面更改為 使用者自行輸入隨機範圍
 
 import random
+start = int(input('請輸入開始值: '))
+end = int(input('請輸入結束值: '))
 
-r = random.randint(1,100)
+
+r = random.randint(start,end)
 count=0
 while True:
 	count+=1  #count=count+1
